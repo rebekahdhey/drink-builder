@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  background: #fdf3e7;
+  font-family: system-ui, sans-serif;
+  color: #5b3a29;
+}
+
+.app {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.1rem;
+  margin: 1.5rem 0 0.6rem;
+}
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.option {
+  background: white;
+  color: #5b3a29;
+  border: 2px solid #e8cdb5;
+  border-radius: 999px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.option:hover {
+  border-color: #c68b59;
+}
+
+.option.selected {
+  background: #c68b59;
+  border-color: #c68b59;
+  color: white;
+}
+
+.option small {
+  opacity: 0.8;
+}
+
+.total {
+  margin-top: 2rem;
+  font-size: 1.6rem;
+}
+
+.order-btn {
+  background: #5b3a29;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  padding: 0.8rem 1.6rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.order-btn:hover {
+  background: #3e271b;
+}
+
+.history {
+  margin-top: 2rem;
+  background: white;
+  border-radius: 16px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+
+.history h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.history ul {
+  list-style: none;
+  padding: 0;
+}
+
+.history li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px dashed #e8cdb5;
+  text-transform: capitalize;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.history h3 {
+  text-align: right;
+  margin-bottom: 0;
+}
+
+/* Cup */
+.cup-area {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2.5rem 0 1rem;
+}
+
+.toppings-row {
+  position: absolute;
+  top: -1.8rem;
+  height: 1.8rem;
+  font-size: 1.5rem;
+}
+
+.cup {
+  width: 110px;
+  border: 4px solid #5b3a29;
+  border-radius: 0 0 40px 40px;
+  background: white;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  transition: height 0.3s;
+}
+
+.liquid {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  transition: background 0.3s;
+}
+
+.cup-bottom {
+  font-size: 0.9rem;
+  padding-bottom: 4px;
+}
